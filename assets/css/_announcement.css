@@ -1,0 +1,15 @@
+.announcement {
+    background-color: var(--color-base-dark);
+}
+
+.announcement__link {
+    display: block;
+    padding: var(--spacing-unit-sm);
+    color: rgba(255, 255, 255, .65);
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.announcement__link:hover {
+    color: rgba(255, 255, 255, .8);
+}

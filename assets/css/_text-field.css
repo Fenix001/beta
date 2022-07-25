@@ -1,0 +1,8 @@
+.text-field {
+    height: 44px;
+    padding: 0 calc(var(--spacing-unit-sm));
+    line-height: 44px;
+    border: 1px solid #dae1e7;
+    border-radius: 4px;
+    font-size: 1.6rem;
+}
