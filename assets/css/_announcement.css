@@ -4,10 +4,11 @@
 
 .announcement__link {
     display: block;
-    padding: var(--spacing-unit-sm);
-    color: rgba(255, 255, 255, .65);
-    text-decoration: none;
+    padding: 5px 0;
+    font-size: 1.4rem;
     transition: all 0.2s;
+    text-decoration: none;
+    color: rgba(255, 255, 255, .65);
 }
 
 .announcement__link:hover {

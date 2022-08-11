@@ -1,0 +1,58 @@
+/* Global cards */
+
+.product-card {
+    padding: 10px;
+    margin: 10px 0;
+    transition: all 0.3s;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: var(--border-radius-sm);
+}
+
+.product-card:hover {
+    border-color: rgba(var(--color-primary-rgb), 0.3);
+}
+
+.product-card__image img {
+    cursor: pointer;
+    max-width: 100%;
+    border-radius: var(--border-radius-sm);
+}
+
+.product-card__details {
+    padding: 10px 0;
+}
+
+.product-card__link {
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: var(--color-base-text);
+}
+
+.product-card__link:hover {
+    color: var(--color-primary);
+}
+
+.product-card_price_old {
+    color: var(--color-danger);
+    text-decoration: line-through;
+}
+
+.product-card_price_current {
+    font-weight: 600;
+    font-size: 2.4rem;
+    padding-left: 15px;
+}
+
+.product-card__prices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-card_price_saving {
+    color: rgba(var(--color-primary-rgb), 0.8);
+    margin-left: auto;
+}

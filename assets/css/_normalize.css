@@ -27,8 +27,13 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
+input, label, button, select, textarea {
+    outline: none;
+}
+
 body {
     line-height: 1;
+    color: var(--color-base-text);
 }
 *, *::before, *::after {
     box-sizing: border-box;

@@ -11,16 +11,32 @@
   --font-body-scale: 1;
   --font-heading-scale: 1;
 
-  --color-base-text: #4b566b;
+  --color-primary: #0583F2;
+  --color-primary-rgb: 5, 131, 242;
+  --color-base-text: #373f50;
   --color-base-text-rgb: 75, 86, 107;
   --color-shadow: 0, 0, 0;
+  --color-border: #dae1e7;
+  --color-border-rgb: 218, 225, 231;
   --color-base-light: #fff;
   --color-base-dark: #373f50;
 
+  /* Default colors */
+  --color-danger: #ff4146;
+  --color-danger-rgb: 255, 65, 70;
+
+  --spacing-unit-xs: 4px;
   --spacing-unit-sm: 8px;
   --spacing-unit-md: 16px;
   --spacing-unit-lg: 32px;
   --spacing-unit-xl: 64px;
+
+  --border-radius-xs: 2px;
+  --border-radius-sm: 4px;
+  --border-radius-md: 6px;
+
+  --shadow-hover: 0 0 0 0 transparent, 0 0.375rem 0.625rem -0.3125rem;
+
   /*--color-base-solid-button-labels: {{ settings.colors_solid_button_labels.red }}, {{ settings.colors_solid_button_labels.green }}, {{ settings.colors_solid_button_labels.blue }};
   --color-base-outline-button-labels: {{ settings.colors_outline_button_labels.red }}, {{ settings.colors_outline_button_labels.green }}, {{ settings.colors_outline_button_labels.blue }};
   --color-base-accent-1: {{ settings.colors_accent_1.red }}, {{ settings.colors_accent_1.green }}, {{ settings.colors_accent_1.blue }};

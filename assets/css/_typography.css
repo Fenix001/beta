@@ -9,3 +9,45 @@
 .text-right {
     text-align: right;
 }
+
+.radius-100 {
+    border-radius: 100%;
+}
+
+/* Global radius */
+.radius-md {
+    border-radius: var(--border-radius-md);
+}
+
+.radius-sm {
+    border-radius: var(--border-radius-sm);
+}
+
+.radius-xs {
+    border-radius: var(--border-radius-xs);
+}
+
+/* Global headings */
+h1, .h1 {
+    font-size: 3.2rem;
+}
+
+h2, .h2 {
+    font-size: 2.8rem;
+}
+
+h3, .h3 {
+    font-size: 2rem;
+}
+
+h4, .h4 {
+    font-size: 1.8rem;
+}
+
+h5, .h5 {
+    font-size: 1.6rem;
+}
+
+h6, .h6 {
+    font-size: 1.4rem;
+}

@@ -1,8 +1,16 @@
-.text-field {
+.text-field input {
+    width: 100%;
     height: 44px;
-    padding: 0 calc(var(--spacing-unit-sm));
+    font-size: 1.4rem;
     line-height: 44px;
-    border: 1px solid #dae1e7;
     border-radius: 4px;
-    font-size: 1.6rem;
+    transition: all .2s;
+    font-family: var(--font-body-family);
+    padding: 0 calc(var(--spacing-unit-md));
+    border: 1px solid var(--color-border);
+}
+
+.text-field input:focus {
+    border-color: rgba(var(--color-primary-rgb), .5);
+    box-shadow: var(--shadow-hover) rgba(var(--color-primary-rgb), .15);
 }

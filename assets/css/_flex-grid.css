@@ -1,0 +1,712 @@
+:root {
+    --grid-half-gap: 0.75rem;
+}
+
+.grid {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.grid.grid__box {
+    height: auto;
+}
+
+.grid--row {
+    flex-direction: row;
+}
+
+.grid--col {
+    flex-direction: column;
+}
+
+.grid--gap {
+    padding: var(--grid-half-gap);
+}
+
+.grid--gap-in {
+    margin: - var(--grid-half-gap);
+    height: calc(100% + var(--grid-half-gap) * 2);
+}
+
+.grid--gap .grid__box,
+.grid--gap-in .grid__box {
+    padding: var(--grid-half-gap);
+}
+.grid--gap .grid__box.grid,
+.grid--gap .grid__box--nopad,
+.grid--gap-in .grid__box.grid,
+.grid--gap-in .grid__box--nopad {
+    padding: 0;
+}
+
+.grid--main-center {
+    justify-content: center;
+}
+
+.grid--main-end {
+    justify-content: flex-end;
+}
+
+.grid--main-between {
+    justify-content: space-between;
+}
+
+.grid--main-around {
+    justify-content: space-around;
+}
+
+.grid--cross-start {
+    align-items: flex-start;
+}
+
+.grid--cross-center {
+    align-items: center;
+}
+
+.grid--cross-end {
+    align-items: flex-end;
+}
+
+.grid__box {
+    flex: 0 1 100%;
+    position: relative;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.grid__box--fit {
+    flex: 0 0 auto;
+}
+
+.grid--box-overflow-visible .grid__box,
+.grid__box--overflow-visible {
+    overflow: visible;
+}
+
+.grid--box-overflow-hidden .grid__box,
+.grid__box--overflow-hidden {
+    overflow: hidden;
+}
+
+.grid--auto-height {
+    height: auto;
+}
+
+.grid--wrap {
+    flex-wrap: wrap;
+}
+
+.grid--nowrap {
+    flex-wrap: nowrap;
+}
+
+.grid--nogap, .grid--nogap .grid__box {
+    padding: 0;
+}
+
+.grid--row.grid--reverse {
+    flex-direction: row-reverse;
+}
+
+.grid--col.grid--reverse {
+    flex-direction: column-reverse;
+}
+
+.grid__box--first {
+    order: -1;
+}
+
+.grid__box--in-place {
+    order: 0;
+}
+
+.grid__box--last {
+    order: 1;
+}
+
+.grid__box--1 {
+    flex-basis: 8.3333333333%;
+}
+
+.grid__box--2 {
+    flex-basis: 16.6666666667%;
+}
+
+.grid__box--3 {
+    flex-basis: 25%;
+}
+
+.grid__box--4 {
+    flex-basis: 33.3333333333%;
+}
+
+.grid__box--5 {
+    flex-basis: 41.6666666667%;
+}
+
+.grid__box--6 {
+    flex-basis: 50%;
+}
+
+.grid__box--7 {
+    flex-basis: 58.3333333333%;
+}
+
+.grid__box--8 {
+    flex-basis: 66.6666666667%;
+}
+
+.grid__box--9 {
+    flex-basis: 75%;
+}
+
+.grid__box--10 {
+    flex-basis: 83.3333333333%;
+}
+
+.grid__box--11 {
+    flex-basis: 91.6666666667%;
+}
+
+.grid__box--12 {
+    flex-basis: 100%;
+}
+
+.grid--row.grid--2-lines > .grid__box {
+    height: 50%;
+}
+.grid--row.grid--3-lines > .grid__box {
+    height: 33.3333333333%;
+}
+.grid--row.grid--4-lines > .grid__box {
+    height: 25%;
+}
+.grid--row.grid--5-lines > .grid__box {
+    height: 20%;
+}
+
+.grid--col.grid--2-lines > .grid__box {
+    width: 50%;
+}
+.grid--col.grid--3-lines > .grid__box {
+    width: 33.3333333333%;
+}
+.grid--col.grid--4-lines > .grid__box {
+    width: 25%;
+}
+.grid--col.grid--5-lines > .grid__box {
+    width: 20%;
+}
+
+.grid--disabled,
+.grid--disabled-all,
+.grid--disabled-all .grid {
+    display: block;
+    height: auto;
+}
+
+.grid--disabled > .grid__box,
+.grid--disabled-all .grid__box {
+    width: auto;
+    height: auto;
+}
+
+@media (max-width: 1199.98px) {
+    .grid--xl-auto-height {
+        height: auto;
+    }
+
+    .grid--xl-wrap {
+        flex-wrap: wrap;
+    }
+
+    .grid--xl-nowrap {
+        flex-wrap: nowrap;
+    }
+
+    .grid--xl-nogap, .grid--xl-nogap .grid__box {
+        padding: 0;
+    }
+
+    .grid--row.grid--xl-reverse {
+        flex-direction: row-reverse;
+    }
+
+    .grid--col.grid--xl-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .grid__box--xl-first {
+        order: -1;
+    }
+
+    .grid__box--xl-in-place {
+        order: 0;
+    }
+
+    .grid__box--xl-last {
+        order: 1;
+    }
+
+    .grid__box--xl-1 {
+        flex-basis: 8.3333333333%;
+    }
+
+    .grid__box--xl-2 {
+        flex-basis: 16.6666666667%;
+    }
+
+    .grid__box--xl-3 {
+        flex-basis: 25%;
+    }
+
+    .grid__box--xl-4 {
+        flex-basis: 33.3333333333%;
+    }
+
+    .grid__box--xl-5 {
+        flex-basis: 41.6666666667%;
+    }
+
+    .grid__box--xl-6 {
+        flex-basis: 50%;
+    }
+
+    .grid__box--xl-7 {
+        flex-basis: 58.3333333333%;
+    }
+
+    .grid__box--xl-8 {
+        flex-basis: 66.6666666667%;
+    }
+
+    .grid__box--xl-9 {
+        flex-basis: 75%;
+    }
+
+    .grid__box--xl-10 {
+        flex-basis: 83.3333333333%;
+    }
+
+    .grid__box--xl-11 {
+        flex-basis: 91.6666666667%;
+    }
+
+    .grid__box--xl-12 {
+        flex-basis: 100%;
+    }
+
+    .grid--row.grid--xl-2-lines > .grid__box {
+        height: 50%;
+    }
+    .grid--row.grid--xl-3-lines > .grid__box {
+        height: 33.3333333333%;
+    }
+    .grid--row.grid--xl-4-lines > .grid__box {
+        height: 25%;
+    }
+    .grid--row.grid--xl-5-lines > .grid__box {
+        height: 20%;
+    }
+
+    .grid--col.grid--xl-2-lines > .grid__box {
+        width: 50%;
+    }
+    .grid--col.grid--xl-3-lines > .grid__box {
+        width: 33.3333333333%;
+    }
+    .grid--col.grid--xl-4-lines > .grid__box {
+        width: 25%;
+    }
+    .grid--col.grid--xl-5-lines > .grid__box {
+        width: 20%;
+    }
+
+    .grid--xl-disabled,
+    .grid--xl-disabled-all,
+    .grid--xl-disabled-all .grid {
+        display: block;
+        height: auto;
+    }
+
+    .grid--xl-disabled > .grid__box,
+    .grid--xl-disabled-all .grid__box {
+        width: auto;
+        height: auto;
+    }
+}
+@media (max-width: 991.98px) {
+    .grid--lg-auto-height {
+        height: auto;
+    }
+
+    .grid--lg-wrap {
+        flex-wrap: wrap;
+    }
+
+    .grid--lg-nowrap {
+        flex-wrap: nowrap;
+    }
+
+    .grid--lg-nogap, .grid--lg-nogap .grid__box {
+        padding: 0;
+    }
+
+    .grid--row.grid--lg-reverse {
+        flex-direction: row-reverse;
+    }
+
+    .grid--col.grid--lg-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .grid__box--lg-first {
+        order: -1;
+    }
+
+    .grid__box--lg-in-place {
+        order: 0;
+    }
+
+    .grid__box--lg-last {
+        order: 1;
+    }
+
+    .grid__box--lg-1 {
+        flex-basis: 8.3333333333%;
+    }
+
+    .grid__box--lg-2 {
+        flex-basis: 16.6666666667%;
+    }
+
+    .grid__box--lg-3 {
+        flex-basis: 25%;
+    }
+
+    .grid__box--lg-4 {
+        flex-basis: 33.3333333333%;
+    }
+
+    .grid__box--lg-5 {
+        flex-basis: 41.6666666667%;
+    }
+
+    .grid__box--lg-6 {
+        flex-basis: 50%;
+    }
+
+    .grid__box--lg-7 {
+        flex-basis: 58.3333333333%;
+    }
+
+    .grid__box--lg-8 {
+        flex-basis: 66.6666666667%;
+    }
+
+    .grid__box--lg-9 {
+        flex-basis: 75%;
+    }
+
+    .grid__box--lg-10 {
+        flex-basis: 83.3333333333%;
+    }
+
+    .grid__box--lg-11 {
+        flex-basis: 91.6666666667%;
+    }
+
+    .grid__box--lg-12 {
+        flex-basis: 100%;
+    }
+
+    .grid--row.grid--lg-2-lines > .grid__box {
+        height: 50%;
+    }
+    .grid--row.grid--lg-3-lines > .grid__box {
+        height: 33.3333333333%;
+    }
+    .grid--row.grid--lg-4-lines > .grid__box {
+        height: 25%;
+    }
+    .grid--row.grid--lg-5-lines > .grid__box {
+        height: 20%;
+    }
+
+    .grid--col.grid--lg-2-lines > .grid__box {
+        width: 50%;
+    }
+    .grid--col.grid--lg-3-lines > .grid__box {
+        width: 33.3333333333%;
+    }
+    .grid--col.grid--lg-4-lines > .grid__box {
+        width: 25%;
+    }
+    .grid--col.grid--lg-5-lines > .grid__box {
+        width: 20%;
+    }
+
+    .grid--lg-disabled,
+    .grid--lg-disabled-all,
+    .grid--lg-disabled-all .grid {
+        display: block;
+        height: auto;
+    }
+
+    .grid--lg-disabled > .grid__box,
+    .grid--lg-disabled-all .grid__box {
+        width: auto;
+        height: auto;
+    }
+}
+@media (max-width: 767.98px) {
+    .grid--sm-auto-height {
+        height: auto;
+    }
+
+    .grid--sm-wrap {
+        flex-wrap: wrap;
+    }
+
+    .grid--sm-nowrap {
+        flex-wrap: nowrap;
+    }
+
+    .grid--sm-nogap, .grid--sm-nogap .grid__box {
+        padding: 0;
+    }
+
+    .grid--row.grid--sm-reverse {
+        flex-direction: row-reverse;
+    }
+
+    .grid--col.grid--sm-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .grid__box--sm-first {
+        order: -1;
+    }
+
+    .grid__box--sm-in-place {
+        order: 0;
+    }
+
+    .grid__box--sm-last {
+        order: 1;
+    }
+
+    .grid__box--sm-1 {
+        flex-basis: 8.3333333333%;
+    }
+
+    .grid__box--sm-2 {
+        flex-basis: 16.6666666667%;
+    }
+
+    .grid__box--sm-3 {
+        flex-basis: 25%;
+    }
+
+    .grid__box--sm-4 {
+        flex-basis: 33.3333333333%;
+    }
+
+    .grid__box--sm-5 {
+        flex-basis: 41.6666666667%;
+    }
+
+    .grid__box--sm-6 {
+        flex-basis: 50%;
+    }
+
+    .grid__box--sm-7 {
+        flex-basis: 58.3333333333%;
+    }
+
+    .grid__box--sm-8 {
+        flex-basis: 66.6666666667%;
+    }
+
+    .grid__box--sm-9 {
+        flex-basis: 75%;
+    }
+
+    .grid__box--sm-10 {
+        flex-basis: 83.3333333333%;
+    }
+
+    .grid__box--sm-11 {
+        flex-basis: 91.6666666667%;
+    }
+
+    .grid__box--sm-12 {
+        flex-basis: 100%;
+    }
+
+    .grid--row.grid--sm-2-lines > .grid__box {
+        height: 50%;
+    }
+    .grid--row.grid--sm-3-lines > .grid__box {
+        height: 33.3333333333%;
+    }
+    .grid--row.grid--sm-4-lines > .grid__box {
+        height: 25%;
+    }
+    .grid--row.grid--sm-5-lines > .grid__box {
+        height: 20%;
+    }
+
+    .grid--col.grid--sm-2-lines > .grid__box {
+        width: 50%;
+    }
+    .grid--col.grid--sm-3-lines > .grid__box {
+        width: 33.3333333333%;
+    }
+    .grid--col.grid--sm-4-lines > .grid__box {
+        width: 25%;
+    }
+    .grid--col.grid--sm-5-lines > .grid__box {
+        width: 20%;
+    }
+
+    .grid--sm-disabled,
+    .grid--sm-disabled-all,
+    .grid--sm-disabled-all .grid {
+        display: block;
+        height: auto;
+    }
+
+    .grid--sm-disabled > .grid__box,
+    .grid--sm-disabled-all .grid__box {
+        width: auto;
+        height: auto;
+    }
+}
+@media (max-width: 575.98px) {
+    .grid--xs-auto-height {
+        height: auto;
+    }
+
+    .grid--xs-wrap {
+        flex-wrap: wrap;
+    }
+
+    .grid--xs-nowrap {
+        flex-wrap: nowrap;
+    }
+
+    .grid--xs-nogap, .grid--xs-nogap .grid__box {
+        padding: 0;
+    }
+
+    .grid--row.grid--xs-reverse {
+        flex-direction: row-reverse;
+    }
+
+    .grid--col.grid--xs-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .grid__box--xs-first {
+        order: -1;
+    }
+
+    .grid__box--xs-in-place {
+        order: 0;
+    }
+
+    .grid__box--xs-last {
+        order: 1;
+    }
+
+    .grid__box--xs-1 {
+        flex-basis: 8.3333333333%;
+    }
+
+    .grid__box--xs-2 {
+        flex-basis: 16.6666666667%;
+    }
+
+    .grid__box--xs-3 {
+        flex-basis: 25%;
+    }
+
+    .grid__box--xs-4 {
+        flex-basis: 33.3333333333%;
+    }
+
+    .grid__box--xs-5 {
+        flex-basis: 41.6666666667%;
+    }
+
+    .grid__box--xs-6 {
+        flex-basis: 50%;
+    }
+
+    .grid__box--xs-7 {
+        flex-basis: 58.3333333333%;
+    }
+
+    .grid__box--xs-8 {
+        flex-basis: 66.6666666667%;
+    }
+
+    .grid__box--xs-9 {
+        flex-basis: 75%;
+    }
+
+    .grid__box--xs-10 {
+        flex-basis: 83.3333333333%;
+    }
+
+    .grid__box--xs-11 {
+        flex-basis: 91.6666666667%;
+    }
+
+    .grid__box--xs-12 {
+        flex-basis: 100%;
+    }
+
+    .grid--row.grid--xs-2-lines > .grid__box {
+        height: 50%;
+    }
+    .grid--row.grid--xs-3-lines > .grid__box {
+        height: 33.3333333333%;
+    }
+    .grid--row.grid--xs-4-lines > .grid__box {
+        height: 25%;
+    }
+    .grid--row.grid--xs-5-lines > .grid__box {
+        height: 20%;
+    }
+
+    .grid--col.grid--xs-2-lines > .grid__box {
+        width: 50%;
+    }
+    .grid--col.grid--xs-3-lines > .grid__box {
+        width: 33.3333333333%;
+    }
+    .grid--col.grid--xs-4-lines > .grid__box {
+        width: 25%;
+    }
+    .grid--col.grid--xs-5-lines > .grid__box {
+        width: 20%;
+    }
+
+    .grid--xs-disabled,
+    .grid--xs-disabled-all,
+    .grid--xs-disabled-all .grid {
+        display: block;
+        height: auto;
+    }
+
+    .grid--xs-disabled > .grid__box,
+    .grid--xs-disabled-all .grid__box {
+        width: auto;
+        height: auto;
+    }
+}
