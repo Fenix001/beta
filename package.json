@@ -1,0 +1,23 @@
+{
+  "name": "beta",
+  "version": "1.0.0",
+  "description": "Let's start",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fenix001/beta.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fenix001/beta/issues"
+  },
+  "homepage": "https://github.com/Fenix001/beta#readme",
+  "dependencies": {
+    "flickity": "^3.0.0",
+    "jquery": "^3.6.0"
+  }
+}

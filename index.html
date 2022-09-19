@@ -4,106 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="./node_modules/flickity/dist/flickity.min.css">
     <link rel="stylesheet" href="./assets/css/theme.css">
     <title>E-commerce home page</title>
+    <link rel="import" href="components/header.html">
 </head>
 <body>
 
-    <!-- START: Announcement bar -->
-    <div class="announcement">
-        <div class="container">
-            <a class="announcement__link text-left" href="#">
-                <span>10% off everything!</span>
-            </a>
-        </div>
-    </div>
-    <!-- END: Announcement bar -->
-    
-    <!--START: Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header__wrapper">
-                <div class="header__logo">
-                    <a href="">
-                        <img src="./assets/images/logo.svg" alt="Site logo">
-                    </a>
-                </div>
-
-                <div class="header__search">
-                    <div class="text-field">
-                        <input type="text" class="search__input" placeholder="Type something">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="search__icon" viewBox="0 0 24 24">
-                            <path d="M23.707,22.293l-5.969-5.969a10.016,10.016,0,1,0-1.414,1.414l5.969,5.969a1,1,0,0,0,1.414-1.414ZM10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18Z"/>
-                        </svg>
-                    </div>
-                </div>
-
-                <div class="header__meta">
-                    <div class="header__favorites">
-                        <button class="profile__button icon-button icon-button_size-md">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"/>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="header__profile">
-                        <button class="profile__button icon-button icon-button_size-md">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M12,12A6,6,0,1,0,6,6,6.006,6.006,0,0,0,12,12ZM12,2A4,4,0,1,1,8,6,4,4,0,0,1,12,2Z"/>
-                                <path d="M12,14a9.01,9.01,0,0,0-9,9,1,1,0,0,0,2,0,7,7,0,0,1,14,0,1,1,0,0,0,2,0A9.01,9.01,0,0,0,12,14Z"/>
-                            </svg>
-                        </button>
-                    </div>
-
-                    <div class="header__cart">
-                        <button class="profile__button icon-button icon-button_size-sm icon-button_bg-light icon-button_type-circle">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M21,6H18A6,6,0,0,0,6,6H3A3,3,0,0,0,0,9V19a5.006,5.006,0,0,0,5,5H19a5.006,5.006,0,0,0,5-5V9A3,3,0,0,0,21,6ZM12,2a4,4,0,0,1,4,4H8A4,4,0,0,1,12,2ZM22,19a3,3,0,0,1-3,3H5a3,3,0,0,1-3-3V9A1,1,0,0,1,3,8H6v2a1,1,0,0,0,2,0V8h8v2a1,1,0,0,0,2,0V8h3a1,1,0,0,1,1,1Z"/>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="header__navigation">
-                <button class="header__button button button_type-link button_icon button_icon-left button_color-primary">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M7,0H4A4,4,0,0,0,0,4V7a4,4,0,0,0,4,4H7a4,4,0,0,0,4-4V4A4,4,0,0,0,7,0ZM9,7A2,2,0,0,1,7,9H4A2,2,0,0,1,2,7V4A2,2,0,0,1,4,2H7A2,2,0,0,1,9,4Z"/>
-                        <path d="M20,0H17a4,4,0,0,0-4,4V7a4,4,0,0,0,4,4h3a4,4,0,0,0,4-4V4A4,4,0,0,0,20,0Zm2,7a2,2,0,0,1-2,2H17a2,2,0,0,1-2-2V4a2,2,0,0,1,2-2h3a2,2,0,0,1,2,2Z"/>
-                        <path d="M7,13H4a4,4,0,0,0-4,4v3a4,4,0,0,0,4,4H7a4,4,0,0,0,4-4V17A4,4,0,0,0,7,13Zm2,7a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V17a2,2,0,0,1,2-2H7a2,2,0,0,1,2,2Z"/>
-                        <path d="M20,13H17a4,4,0,0,0-4,4v3a4,4,0,0,0,4,4h3a4,4,0,0,0,4-4V17A4,4,0,0,0,20,13Zm2,7a2,2,0,0,1-2,2H17a2,2,0,0,1-2-2V17a2,2,0,0,1,2-2h3a2,2,0,0,1,2,2Z"/>
-                    </svg>
-                    <span>Collections</span>
-                </button>
-                <ul>
-                    <li>
-                        <a href="#" class="header__navigation-link">Man</a>
-                    </li>
-                    <li>
-                        <a href="#" class="header__navigation-link">Women</a>
-                    </li>
-                    <li>
-                        <a href="#" class="header__navigation-link">Kids</a>
-                    </li>
-                    <li>
-                        <a href="#" class="header__navigation-link">Docs / Components</a>
-                    </li>
-                </ul>
-
-                <ul class="header_navigation_alignment-right">
-                    <li>
-                        <a href="#" class="header__navigation-link">Help</a>
-                    </li>
-                    <li>
-                        <a href="#" class="header__navigation-link">Gift Card</a>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-    </header>
-    <!-- END: Header -->
+    <div id="header-import"></div>
 
     <!-- START: Slider section -->
 
@@ -155,6 +63,12 @@
                     <a href="#" class="main-categories__link">
                         <img src="./assets/images/categories/women.jpg" alt="Main image">
                         <p>For Woman</p>
+                    </a>
+                </li>
+                <li class="main-categories__item">
+                    <a href="#" class="main-categories__link">
+                        <img src="./assets/images/categories/kids.jpg" alt="Main image">
+                        <p>For Kids</p>
                     </a>
                 </li>
                 <li class="main-categories__item">
@@ -237,101 +151,65 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid__box grid__box--3 grid__box--xl-4 grid__box--sm-6 grid__box--xs-12">
-                    <div class="product-card">
-                        <div class="product-card__image">
-                            <img src="./assets/images/popular/nike-shoes3.webp" alt="Nike shoes">
-                        </div>
-                        <div class="product-card__details">
-                            <a class="product-card__link" href="#">Nike Air Max 07</a>
-                            <div class="product-card__prices">
-                                <span class="product-card_price_old">$45</span>
-                                <span class="product-card_price_current">$36</span>
-                                <span class="product-card_price_saving">Save $9</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid__box grid__box--3 grid__box--xl-4 grid__box--sm-6 grid__box--xs-12">
-                    <div class="product-card">
-                        <div class="product-card__image">
-                            <img src="./assets/images/popular/nike-shoes3.webp" alt="Nike shoes">
-                        </div>
-                        <div class="product-card__details">
-                            <a class="product-card__link" href="#">Nike Air Max 07</a>
-                            <div class="product-card__prices">
-                                <span class="product-card_price_old">$45</span>
-                                <span class="product-card_price_current">$36</span>
-                                <span class="product-card_price_saving">Save $9</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid__box grid__box--3 grid__box--xl-4 grid__box--sm-6 grid__box--xs-12">
-                    <div class="product-card">
-                        <div class="product-card__image">
-                            <img src="./assets/images/popular/nike-shoes3.webp" alt="Nike shoes">
-                        </div>
-                        <div class="product-card__details">
-                            <a class="product-card__link" href="#">Nike Air Max 07</a>
-                            <div class="product-card__prices">
-                                <span class="product-card_price_old">$45</span>
-                                <span class="product-card_price_current">$36</span>
-                                <span class="product-card_price_saving">Save $9</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid__box grid__box--3 grid__box--xl-4 grid__box--sm-6 grid__box--xs-12">
-                    <div class="product-card">
-                        <div class="product-card__image">
-                            <img src="./assets/images/popular/nike-shoes3.webp" alt="Nike shoes">
-                        </div>
-                        <div class="product-card__details">
-                            <a class="product-card__link" href="#">Nike Air Max 07</a>
-                            <div class="product-card__prices">
-                                <span class="product-card_price_old">$45</span>
-                                <span class="product-card_price_current">$36</span>
-                                <span class="product-card_price_saving">Save $9</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
     <!-- END: Popular Products -->
 
+    <!-- START: CTA section -->
+
+    <section class="promo-banner" style="background-image: url('https://source.unsplash.com/random/1920x1080/?accessories')">
+        <div class="container">
+            <div class="promo-banner__content">
+                <h2 class="promo-banner__title">Best offers for accessories</h2>
+                <p class="promo-banner__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur ut dui in velit tristique imperdiet porta a felis.
+                    Ut tincidunt auctor ullamcorper. Quisque nec diam lorem.
+                </p>
+                <button class="button button_type-outline button_color-white">Show now!</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- END: CTA section -->
+
     <!-- START: Collections -->
 
-    <section class="section home-collections bg-gray">
-        <div class="section-title text-center">
-            <h2>Popular Collections</h2>
-        </div>
-        <div class="container">
+    <section class="section home-collections">
+        <div class="containers">
             <div class="grid gird--wrap content-padding">
                 <div class="grid--box grid__box--4">
-                    <div class="collection-item" style="background-image: url('./assets/images/collections/collection1.jpg')">
+                    <div class="collection-item">
+                        <div class="collection-item__image">
+                            <img src="./assets/images/collections/collection1.jpg" alt="Collection image 1">
+                        </div>
                         <div class="collection-item__details">
-                            <a class="collection-item__title" href="#">Collection title</a>
-                            <button class="button button_type-outline button_color-white">Shop now!</button>
+                            <h5 class="collection-item__title">Collection title</h5>
+                            <button class="button button_type-outline button_color-black">Shop now!</button>
                         </div>
                     </div>
                 </div>
                 <div class="grid--box grid__box--4">
-                    <div class="collection-item" style="background-image: url('./assets/images/collections/collection2.jpg')">
+                    <div class="collection-item">
+                        <div class="collection-item__image">
+                            <img src="./assets/images/collections/collection2.jpg" alt="Collection image 2">
+                        </div>
                         <div class="collection-item__details">
-                            <a class="collection-item__title" href="#">Collection title</a>
-                            <button class="button button_type-outline button_color-white">Shop now!</button>
+                            <a class="collection-item__title">Collection title</a>
+                            <button class="button button_type-outline button_color-black">Shop now!</button>
                         </div>
                     </div>
                 </div>
                 <div class="grid--box grid__box--4">
-                    <div class="collection-item" style="background-image: url('./assets/images/collections/collection3.jpg')">
+                    <div class="collection-item">
+                        <div class="collection-item__image">
+                            <img src="./assets/images/collections/collection3.jpg" alt="Collection image 2">
+                        </div>
                         <div class="collection-item__details">
-                            <a class="collection-item__title" href="#">Collection title</a>
-                            <button class="button button_type-outline button_color-white">Shop now!</button>
+                            <a class="collection-item__title">Collection title</a>
+                            <button class="button button_type-outline button_color-black">Shop now!</button>
                         </div>
                     </div>
                 </div>
@@ -341,8 +219,95 @@
 
     <!-- END: Collections -->
 
+    <!-- START: Large Collections  -->
+
+    <section class="collections">
+        <div class="container">
+            <div class="collection__item">
+                <div class="collection__image" style="background-image: url('https://source.unsplash.com/random/800x800/?jeans')"></div>
+                <div class="collection__content">
+                    <h3 class="collection__title">Jeans for less</h3>
+                    <p class="collection__description">
+                        Pellentesque ullamcorper non justo ac egestas.
+                        Nam in fermentum mi, nec bibendum metus.
+                        Donec lorem risus, sollicitudin et dictum sit amet, eleifend dignissim sem.
+                    </p>
+                    <button class="button button_type-filled button_color-dark">View collection</button>
+                </div>
+            </div>
+            <div class="collection__item collection__item-image_left">
+                <div class="collection__image" style="background-image: url('https://source.unsplash.com/random/900x800/?jeans')"></div>
+                <div class="collection__content">
+                    <h3 class="collection__title">Jeans for less</h3>
+                    <p class="collection__description">
+                        Pellentesque ullamcorper non justo ac egestas.
+                        Nam in fermentum mi, nec bibendum metus.
+                        Donec lorem risus, sollicitudin et dictum sit amet, eleifend dignissim sem.
+                    </p>
+                    <button class="button button_type-filled button_color-dark">View collection</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END: Large Collections  -->
+
+    <!-- START: Blog -->
+
+    <section class="section popular-blog">
+        <div class="section-title text-center">
+            <h2>Popular Blog</h2>
+        </div>
+        <div class="container">
+            <div class="grid gird--wrap content-padding">
+                <div class="grid--box grid__box--4">
+                    <div class="blog-item">
+                        <div class="blog-item__image">
+                            <img src="https://source.unsplash.com/random/800x500/?fashion" alt="blog image 1">
+                        </div>
+                        <div class="blog-item__details">
+                            <a class="blog-item__title">How to choose th right </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid--box grid__box--4">
+                    <div class="blog-item">
+                        <div class="blog-item__image">
+                            <img src="https://source.unsplash.com/random/800x500/?clothes" alt="blog image 2">
+                        </div>
+                        <div class="blog-item__details">
+                            <a class="blog-item__title">blog title</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid--box grid__box--4">
+                    <div class="blog-item">
+                        <div class="blog-item__image">
+                            <img src="https://source.unsplash.com/random/800x500/?shoes" alt="blog image 2">
+                        </div>
+                        <div class="blog-item__details">
+                            <a class="blog-item__title">Blog title</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END: Blog -->
+
+    <div id="footer-import"></div>
+
     <!-- JS files -->
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./node_modules/flickity/dist/flickity.pkgd.min.js"></script>
     <script src="./assets/js/theme.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#header-import').load('./components/header.html');
+            $('#footer-import').load('./components/footer.html');
+        });
+    </script>
 </body>
 </html>

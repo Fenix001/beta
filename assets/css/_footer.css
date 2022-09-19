@@ -1,0 +1,129 @@
+/* General footer */
+
+footer {
+    padding: 40px 0;
+    background-color: rgba(151, 151, 151, 0.1);
+}
+
+.footer__wrapper {
+    display: flex;
+    padding: 30px 0;
+}
+
+.footer__about {
+    max-width: 30%;
+}
+
+.footer__logo {
+    display: block;
+    max-width: 200px;
+    transition: 0.3s;
+    margin-bottom: 15px;
+}
+
+.footer__logo:hover {
+    opacity: 0.8;
+}
+
+.footer__logo img {
+    display: block;
+    max-width: 100%;
+}
+
+.footer__socials {
+    margin-top: 25px;
+}
+
+.footer__menu-link {
+    margin: 5px 0;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    color: var(--color-base-dark);
+}
+
+.footer__menu-link:hover {
+    text-decoration: underline;
+}
+
+.footer__menu {
+    width: 30%;
+    margin-left: 100px;
+}
+
+.footer__menu-title {
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.footer__subscription {
+    margin-left: 80px;
+}
+
+.footer__subscription-form {
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+}
+
+.footer__subscription-button {
+    margin-left: 10px;
+}
+
+.footer__payment {
+    display: flex;
+    padding: 30px 0;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--color-border);
+}
+
+.footer__payment-icons {
+    display: flex;
+    align-items: center;
+}
+
+.footer__payment-icons li {
+    padding: 0 5px;
+}
+
+.footer__payment-icons li:first-child {
+    padding-left: 0;
+}
+
+.footer__payment-icons li:last-child {
+    padding-right: 0;
+}
+
+.footer__copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__copyright-text {
+    font-size: 1.4rem;
+}
+
+.footer__copyright-policy {
+    display: flex;
+}
+
+.footer__copyright-policy a {
+    font-size: 1.4rem;
+    color: var(--color-base-dark);
+}
+
+.footer__copyright-policy li {
+    padding: 0 10px;
+}
+
+.footer__copyright-policy li:first-child {
+    padding-left: 0;
+}
+
+.footer__copyright-policy li:last-child {
+    padding-right: 0;
+}

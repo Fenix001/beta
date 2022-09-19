@@ -1,0 +1,41 @@
+/* Blog cards and page styles */
+
+.popular-blog {
+
+}
+
+.blog-item {
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.blog-item__image img {
+    width: 100%;
+    display: block;
+    /*border-radius: var(--border-radius-sm);*/
+}
+
+.blog-item__details {
+    z-index: 1;
+    padding: 20px 15px;
+    text-align: center;
+    position: relative;
+}
+
+.blog-item__title {
+    font-size: 1.8rem;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: var(--color-base-text);
+}
+
+.blog-item__description {
+    font-size: 1.4rem;
+    color: rgba(255,255,255, 0.9);
+}
+
+.blog-item__details .button {
+    margin: 0 auto 0;
+}

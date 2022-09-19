@@ -1,7 +1,7 @@
 /* Rubik font family import */
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+/*@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500;600;700&display=swap');*/
 /* Import theme variables */
 @import url(./_variables.css);
 
@@ -13,7 +13,12 @@
 @import url(./_layout-elements.css);
 @import url(./_announcement.css);
 @import url(./_header.css);
+@import url(./_footer.css);
 @import url(./_banner.css);
 @import url(./_home-categories.css);
 @import url(./_product-card.css);
 @import url(./_collection-item.css);
+@import url(./_promo-banner.css);
+@import url(./_blog.css);
+@import url(./_socials.css);
+@import url(./_product-single.css);

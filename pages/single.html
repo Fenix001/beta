@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <title>E-commerce home page</title>
+    <link rel="import" href="../components/header.html">
+</head>
+<body>
+
+    <div id="header-import"></div>
+
+    <div class="product product-wrapper">
+        <div class="container">
+            <div class="product__carousel">
+                <div class="carousel-nav__container">
+                    <div class="product__carousel-nav"
+                         data-flickity='{
+                            "asNavFor": ".product__carousel-main",
+                            "draggable": true,
+                            "percentPosition": false,
+                            "groupCells": "100%",
+                            "pageDots": false
+                         }'>
+                        <div class="product__carousel-cell">
+                            <img src="../assets/images/popular/nike-shoes.webp" alt="Nike">
+                        </div>
+                        <div class="product__carousel-cell">
+                            <img src="../assets/images/popular/nike-shoes2.webp" alt="Nike">
+                        </div>
+                        <div class="product__carousel-cell">
+                            <img src="../assets/images/popular/nike-shoes3.webp" alt="Nike">
+                        </div>
+                        <div class="product__carousel-cell">
+                            <img src="../assets/images/popular/nike-shoes.webp" alt="Nike">
+                        </div>
+                        <div class="product__carousel-cell">
+                            <img src="../assets/images/popular/nike-shoes2.webp" alt="Nike">
+                        </div>
+                        <div class="product__carousel-cell">
+                            <img src="../assets/images/popular/nike-shoes3.webp" alt="Nike">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-main__container">
+                    <div class="product__carousel-main"
+                         data-flickity='{
+                            "contain": true,
+                            "pageDots": true
+                         }'>
+                        <div class="product__carousel-cell">
+                            <img src="../assets/images/popular/nike-shoes.webp" alt="Nike">
+                        </div>
+                        <div class="product__carousel-cell">
+                            <img src="../assets/images/popular/nike-shoes2.webp" alt="Nike">
+                        </div>
+                        <div class="product__carousel-cell">
+                            <img src="../assets/images/popular/nike-shoes3.webp" alt="Nike">
+                        </div>
+                        <div class="product__carousel-cell">
+                            <img src="../assets/images/popular/nike-shoes.webp" alt="Nike">
+                        </div>
+                        <div class="product__carousel-cell">
+                            <img src="../assets/images/popular/nike-shoes2.webp" alt="Nike">
+                        </div>
+                        <div class="product__carousel-cell">
+                            <img src="../assets/images/popular/nike-shoes3.webp" alt="Nike">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product__details">
+
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-import"></div>
+
+    <!-- JS files -->
+    <script src="../node_modules/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="../assets/js/theme.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#header-import').load('../components/header.html');
+            $('#footer-import').load('../components/footer.html');
+        });
+    </script>
+</body>
+</html>

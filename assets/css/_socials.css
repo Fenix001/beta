@@ -1,0 +1,33 @@
+/* Social media icon navigation */
+
+.socials {
+    display: flex;
+    align-items: center;
+}
+
+.socials li {
+    padding: 0 10px;
+}
+
+.socials li:first-child {
+    padding-left: 0;
+}
+
+.socials li:last-child {
+    padding-right: 0;
+}
+
+.social__link {
+    color: var(--color-base-text);
+}
+
+.social__link svg {
+    width: 20px;
+    height: 20px;
+    transition: 0.3s;
+    fill: var(--color-base-text);
+}
+
+.social__link:hover svg {
+    opacity: 0.8;
+}

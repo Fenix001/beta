@@ -124,7 +124,7 @@
 .header__navigation {
     display: flex;
     align-items: center;
-    margin-top: var(--spacing-unit-md);
+    /*margin-top: var(--spacing-unit-md);*/
 }
 
 .header__button {
