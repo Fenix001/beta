@@ -18,6 +18,8 @@
   "homepage": "https://github.com/Fenix001/beta#readme",
   "dependencies": {
     "flickity": "^3.0.0",
+    "flickity-as-nav-for": "^3.0.0",
+    "flickity-fullscreen": "^2.0.0",
     "jquery": "^3.6.0"
   }
 }

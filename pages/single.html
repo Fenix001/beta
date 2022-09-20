@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../node_modules/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="../node_modules/flickity-fullscreen/fullscreen.css">
     <link rel="stylesheet" href="../assets/css/theme.css">
     <title>E-commerce home page</title>
     <link rel="import" href="../components/header.html">
@@ -20,7 +21,7 @@
                     <div class="product__carousel-nav"
                          data-flickity='{
                             "asNavFor": ".product__carousel-main",
-                            "draggable": true,
+                            "draggable": false,
                             "percentPosition": false,
                             "groupCells": "100%",
                             "pageDots": false
@@ -49,8 +50,10 @@
                 <div class="carousel-main__container">
                     <div class="product__carousel-main"
                          data-flickity='{
-                            "contain": true,
-                            "pageDots": true
+                            "contain": false,
+                            "pageDots": false,
+                            "fade": true,
+                            "fullscreen": true
                          }'>
                         <div class="product__carousel-cell">
                             <img src="../assets/images/popular/nike-shoes.webp" alt="Nike">
@@ -73,6 +76,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="product__details">
 
             </div>
@@ -83,6 +87,8 @@
 
     <!-- JS files -->
     <script src="../node_modules/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="../node_modules/flickity-as-nav-for/as-nav-for.js"></script>
+    <script src="../node_modules/flickity-fullscreen/fullscreen.js"></script>
     <script src="../assets/js/theme.js"></script>
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 
